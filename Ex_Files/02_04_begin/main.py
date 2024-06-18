@@ -7,15 +7,17 @@ while i < len(NAMES):
     i += 1
 
 for name in NAMES:
-    print(name)
+    print(name) # prints the names on the lists
 
 for name, age in zip(NAMES, AGES):
-    print(f"{name} {age}")
+    print(f"{name} {age}") # prints name and age
 
 for name in reversed(NAMES):
-    print(name)
+    print(name) # prints list in reverse
 
 for i in range(5):
-    print(i)
+    print(i) # prints numbers from range
 
 # enumerate
+for i, name in enumerate(NAMES):
+    print(f"{i} {name}") # enumerates the names in order from 0, has iteration with index

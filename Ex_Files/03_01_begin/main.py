@@ -12,11 +12,11 @@ EINSTEIN = {
     "motivation": "for his services to Theoretical Physics...",
 }
 
-with open("laureates.csv", "r") as f:
+with open("laureates.csv", "r") as f: # opens csv file and use read mode, f - file
     reader = csv.DictReader(f)
     laureates = list(reader)
 
-for laureate in laureates:
+for laureate in laureates: # for each laureate in the laureates
     if laureate["surname"] == "Einstein":
         pprint(laureate)
         break
